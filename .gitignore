@@ -1,0 +1,11 @@
+#Ignore IDEA files / folder
+.idea
+.settings
+Matrix Server.iml
+Matrix718.iml
+
+#Output bin
+bin/
+
+#Cache and useless players data
+data/cache
