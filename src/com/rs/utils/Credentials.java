@@ -25,7 +25,7 @@ public class Credentials {
 	private static void loadUsernames() {
 		String username = null;
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader("data/censor/BannedUsernames/usernames.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("data/serverData/censor/BannedUsernames/usernames.txt"));
 			while ((username = reader.readLine()) != null) {
 				blocked.add(username);
 			}
@@ -39,7 +39,7 @@ public class Credentials {
 	private static void loadPasswords() {
 		String password = null;
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader("data/censor/CommonPasswords/passwords.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("data/serverData/censor/CommonPasswords/passwords.txt"));
 			while ((password = reader.readLine()) != null) {
 				common.add(password);
 			}

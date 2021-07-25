@@ -16,7 +16,7 @@ public class Weights {
 			24211, 14938, 14939, 24208, 24209, 14936, 14937 };
 
 	public static void init() {
-		try (BufferedReader reader = new BufferedReader(new FileReader("data/items/unpackedWeights.txt"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("data/serverData/items/unpackedWeights.txt"))) {
 			while (true) {
 				String file = reader.readLine();
 				if (file == null) {

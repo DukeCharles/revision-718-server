@@ -21,16 +21,16 @@ public final class ObjectSpawns {
 	private static BufferedReader in;
 
 	public static final void init() {
-		if (!new File("data/map/packedSpawns").exists())
+		if (!new File("data/serverData/map/packedSpawns").exists())
 			packObjectSpawns();
 	}
 
 	private static final void packObjectSpawns() {
 		Logger.log("ObjectSpawns", "Packing object spawns...");
-		if (!new File("data/map/packedSpawns").mkdir())
+		if (!new File("data/serverData/map/packedSpawns").mkdir())
 			throw new RuntimeException("Couldn't create packedSpawns directory.");
 		try {
-			in = new BufferedReader(new FileReader("data/map/unpackedSpawnsList.txt"));
+			in = new BufferedReader(new FileReader("data/serverData/map/unpackedSpawnsList.txt"));
 			while (true) {
 				String line = in.readLine();
 				if (line == null)

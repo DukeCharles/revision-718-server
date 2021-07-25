@@ -1575,7 +1575,7 @@ public class Player extends Entity {
 	public static void archiveChat(Player player, String message) {
 		try {
 			String location = "";
-			location = "data/logs/chat/" + player.getUsername() + ".txt";
+			location = "data/playerData/logs/chat/" + player.getUsername() + ".txt";
 			BufferedWriter writer = new BufferedWriter(new FileWriter(location, true));
 			writer.write("[" + currentTime("dd MMMMM yyyy 'at' hh:mm:ss z") + "] - " + message);
 			writer.newLine();

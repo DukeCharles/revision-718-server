@@ -19,13 +19,13 @@ import com.rs.game.player.content.grandexchange.OfferHistory;
 
 public class SerializableFilesManager {
 
-	public static final String PATH = Settings.ECONOMY_MODE == 0 ? "data/ecocharacters/" : "data/spawncharacters/";
-	private static final String CLAN_PATH = "data/clans/";
-	private static final String BACKUP_PATH = Settings.ECONOMY_MODE == 0 ? "data/ecocharactersBackup/" : "data/spawncharactersBackup/";
-	public static final String GE_OFFERS = "data/GE/grandexchange/grandExchangeOffers.ser";
-	private static final String GE_OFFERS_HISTORY = "data/GE/grandexchange/grandExchangeOffersTrack.ser";
-	private static final String GE_PRICES = "data/GE/grandexchange/grandExchangePrices.ser";
-	private static final String DISPLAY_NAMES = "displayNames.ser";
+	public static final String PATH = Settings.ECONOMY_MODE == 0 ? "data/playerData/ecocharacters/" : "data/playerData/spawncharacters/";
+	private static final String CLAN_PATH = "data/playerData/clans/";
+	private static final String BACKUP_PATH = Settings.ECONOMY_MODE == 0 ? "data/playerData/ecocharactersBackup/" : "data/playerData/spawncharactersBackup/";
+	public static final String GE_OFFERS = "data/playerData/GE/grandexchange/grandExchangeOffers.ser";
+	private static final String GE_OFFERS_HISTORY = "data/playerData/GE/grandexchange/grandExchangeOffersTrack.ser";
+	private static final String GE_PRICES = "data/playerData/GE/grandexchange/grandExchangePrices.ser";
+	private static final String DISPLAY_NAMES = "data/playerData/displayNames.ser";
 
 	public synchronized static final boolean containsPlayer(String username) {
 		return new File(PATH + username + ".p").exists();

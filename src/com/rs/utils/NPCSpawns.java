@@ -76,16 +76,16 @@ public final class NPCSpawns {
 	}
 
 	public static final void init() {
-		if (!new File("data/npcs/packedSpawns").exists())
+		if (!new File("data/serverData/npcs/packedSpawns").exists())
 			packNPCSpawns();
 	}
 
 	private static final void packNPCSpawns() {
 		Logger.log("NPCSpawns", "Packing npc spawns...");
-		if (!new File("data/npcs/packedSpawns").mkdir())
+		if (!new File("data/serverData/npcs/packedSpawns").mkdir())
 			throw new RuntimeException("Couldn't create packedSpawns directory.");
 		try {
-			in2 = new BufferedReader(new FileReader("data/npcs/unpackedSpawnsList.txt"));
+			in2 = new BufferedReader(new FileReader("data/serverData/npcs/unpackedSpawnsList.txt"));
 			while (true) {
 				String line = in2.readLine();
 				if (line == null)

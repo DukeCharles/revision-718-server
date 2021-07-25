@@ -27,7 +27,7 @@ public class StarterProtection {
 
 	private static List<String> StarterIPS = new ArrayList<String>();
 
-	private static final String Path = "data/starter/starterIPS.txt";
+	private static final String Path = "data/playerData/starter/starterIPS.txt";
 	
 	public static void addStarter(Player player) {
 		player.recievedStarter = true;

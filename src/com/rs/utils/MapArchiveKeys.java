@@ -15,7 +15,7 @@ import java.util.HashMap;
 public final class MapArchiveKeys {
 
 	private final static HashMap<Integer, int[]> keys = new HashMap<Integer, int[]>();
-	private final static String PACKED_PATH = "data/map/archiveKeys/packed.mcx";
+	private final static String PACKED_PATH = "data/serverData/map/archiveKeys/packed.mcx";
 
 	public static final int[] getMapKeys(int regionId) {
 		return keys.get(regionId);
@@ -51,7 +51,7 @@ public final class MapArchiveKeys {
 		Logger.log("MapArchiveKeys", "Packing map containers xteas...");
 		try {
 			DataOutputStream out = new DataOutputStream(new FileOutputStream(PACKED_PATH));
-			File unpacked = new File("data/map/archiveKeys/unpacked/");
+			File unpacked = new File("data/serverData/map/archiveKeys/unpacked/");
 			File[] xteasFiles = unpacked.listFiles();
 			for (File region : xteasFiles) {
 				String name = region.getName();

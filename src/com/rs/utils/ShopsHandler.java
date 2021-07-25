@@ -20,8 +20,8 @@ public class ShopsHandler {
 
 	private static final HashMap<Integer, Shop> handledShops = new HashMap<Integer, Shop>();
 
-	private static final String PACKED_PATH = "data/items/packedShops.s";
-	private static final String UNPACKED_PATH = "data/items/unpackedShops.txt";
+	private static final String PACKED_PATH = "data/serverData/items/packedShops.s";
+	private static final String UNPACKED_PATH = "data/serverData/items/unpackedShops.txt";
 
 	private static BufferedReader in;
 

@@ -42,7 +42,7 @@ public class Session {
 	public void logIp(Session session) {
 		try {
 			String location = "";
-			location = "data/iplog/log.txt";
+			location = "data/playerData/iplog/log.txt";
 			BufferedWriter writer = new BufferedWriter(new FileWriter(location, true));
 			writer.write("[" + Commands.currentTime("dd MMMMM yyyy 'at' hh:mm:ss z") + "] - " + session.getIP());
 			writer.newLine();

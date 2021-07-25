@@ -13,7 +13,7 @@ import com.rs.game.npc.Drop;
 
 public class NPCDrops {
 
-	private final static String PACKED_PATH = "data/npcs/packedDrops.d";
+	private final static String PACKED_PATH = "data/serverData/npcs/packedDrops.d";
 	private static HashMap<Integer, Drop[]> npcDrops;
 
 	public static final void init() {

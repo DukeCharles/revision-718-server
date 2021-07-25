@@ -16,8 +16,8 @@ import java.util.HashMap;
 public class MusicHints {
 
 	private final static HashMap<Integer, String> musicHints = new HashMap<Integer, String>();
-	private final static String PACKED_PATH = "data/musics/packedMusicHints.mh";
-	private final static String UNPACKED_PATH = "data/musics/unpackedMusicHints.txt";
+	private final static String PACKED_PATH = "data/serverData/musics/packedMusicHints.mh";
+	private final static String UNPACKED_PATH = "data/serverData/musics/unpackedMusicHints.txt";
 	private static BufferedReader in;
 
 	public static final void init() {
